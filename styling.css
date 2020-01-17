@@ -1,28 +1,38 @@
-/**Sets entire website background to black*/
+/*Sets entire website background to black*/
 body {
+	background-image: url("background.png");
 	background-color: black;
 	font-family: "Open Sans", sans-serif;
 }
 
-/**Sets styling to header of website*/
+/*Sets styling to header of website*/
 #header {
 	text-align: center;
 	color: white;
+	text-shadow: 1px 1px grey;
 }
 
-/**Aligns images to center of columns, and sets text information to white*/
+/*Aligns images to center of columns, and sets text information to white*/
 #imageGrid {
 	text-align: center;
 }
 
-/**Makes all images autosized*/
+/*Makes all images autosized*/
 img {
 	width: 500px;
 	height: auto;
-	border: 1px solid grey;
+	border: 1px solid black;
 }
 
-/**Removes margin and padding from row*/
+/*Formats image description*/
+.description {
+	border: 1px solid white;
+	color: white;
+	background-color: black;
+	text-shadow: 1px 1px grey;
+}
+
+/*Removes margin and padding from row*/
 .row.no-gutters {
   margin-right: 0;
   margin-left: 0;
@@ -32,4 +42,12 @@ img {
     padding-right: 0;
     padding-left: 0;
   }
+}
+
+a {
+	background-color: black;
+}
+
+a:hover {
+	color: red;
 }
